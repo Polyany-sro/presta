@@ -30,7 +30,17 @@
 	
 	{*<li id="header_link_sitemap"><a href="{$link->getPageLink('sitemap')|escape:'html'}" title="{l s='sitemap' mod='csblockpermanentlinks'}">{l s='sitemap' mod='csblockpermanentlinks'}</a></li>*}
 	
-	<li class="icon-user" style="margin-top: 2px;"><a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='View my customer account' mod='csblockpermanentlinks'}" class="account" rel="nofollow">{l s='MEIN KONTO' mod='csblockpermanentlinks'}</a></li>	
+	<li class="icon-user" style="margin-top: 1px;"><a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='View my customer account' mod='csblockpermanentlinks'}" class="account" rel="nofollow">{l s='MEIN KONTO' mod='csblockpermanentlinks'}</a></li>	
+	
+	{if $logged}
+	
+	<li class="icon-logout" style="margin-top: 1px;"><a href="http://volentis.ch/presta/de/?mylogout" title="{l s='Logout' mod='csblockpermanentlinks'}" class="account" rel="nofollow">{l s='Abmelden' mod='csblockpermanentlinks'}</a></li>	
+
+	{else}
+	
+	<li class="icon-login" style="margin-top: 1px;"><a href="http://volentis.ch/presta/de/login?" title="{l s='Login' mod='csblockpermanentlinks'}" class="account" rel="nofollow">{l s='Anmelden' mod='csblockpermanentlinks'}</a></li>	
+	
+	{/if}
 	
 	<li id="header_link_wishlist"><a href="{$link->getModuleLink('blockwishlist','mywishlist')|escape:'html'}" title="{l s='wishlist' mod='csblockpermanentlinks'}">{l s='wishlist' mod='csblockpermanentlinks'}</a></li>
 	
