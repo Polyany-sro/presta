@@ -87,10 +87,12 @@ margin-right: 14px;}
 }
 .menu-toggle{
     padding:10px 20px 12px;
-	border:1px solid #c28f79;-moz-border-radius:25px;border-radius:25px;
-    color:#c28f79;
+	border:1px solid black;
+	-moz-border-radius:25px;
+    color:black;
     font-size:18px;font-weight:600;
-    cursor:pointer; font-family: 'Open Sans', sans-serif;  
+    cursor:pointer; 
+	font-family: Ubuntu;  
 }
 #megamenu-responsive-root li.root {display:none}
 #megamenu-responsive-root > li{text-transform:lowercase;margin-bottom:10px;line-height:20px;}
@@ -110,9 +112,13 @@ margin-right: 14px;}
     text-align:center;
     font-weight:700;
     font-size:20px;
-	background-color:#c28f79;width:24px;height:24px;
-	color:#fff;padding:3px 0;
-    margin:10px 15px;cursor:pointer;
+	background-color:black;
+	width:24px;
+	height:24px;
+	color:#fff;
+	padding:3px 0;
+    margin:10px 15px;
+	cursor:pointer;
 }
 a.cs_product_image img,.img_manu img{max-width : 100%;}
 /* Media Queries */
