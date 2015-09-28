@@ -9753,13 +9753,15 @@ div.star a:hover {
 }
 
 #short_description_content ul li:before {
-    content: "\f1b0";
+    content: "\f111";
 	/*background: url(http://volentis.ch/presta/themes/pt_titanshop/img/bone.png) ;*/
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
 	margin-right: 5px;
+	font-size: 5px;
+	vertical-align: middle;
          }
 
 /* line 1405, ../sass/global.scss */
